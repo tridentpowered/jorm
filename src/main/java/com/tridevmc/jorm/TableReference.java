@@ -1,7 +1,5 @@
 package com.tridevmc.jorm;
 
-import com.tridevmc.jorm.api.ForeignKey;
-
 import java.util.ArrayList;
 import java.util.List;
 

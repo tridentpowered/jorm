@@ -1,7 +1,6 @@
 package com.tridevmc.jorm;
 
 
-
 public class PrimaryKeyReference {
     public String name;
     public String field;
