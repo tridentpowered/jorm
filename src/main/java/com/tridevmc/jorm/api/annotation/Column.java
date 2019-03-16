@@ -1,4 +1,4 @@
-package com.tridevmc.jorm.api;
+package com.tridevmc.jorm.api.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,8 +7,6 @@ import java.lang.annotation.Target;
 
 /**
  * Defines a field as a reference to a column within a table.
- *
- * @author CalmBit
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)

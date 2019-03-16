@@ -1,4 +1,4 @@
-package com.tridevmc.jorm.api;
+package com.tridevmc.jorm.api.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -15,9 +15,9 @@ import java.lang.annotation.Target;
 public @interface ForeignKey {
 
     /**
-     * The name of the column in the table. Defaults to the field name if left empty.
+     * The name of the constraint. Defaults to "FK_[TABLE_NAME]_TO_[REFERENCED TABLE NAME]" if empty.
      *
-     * @return the name of the column in the table.
+     * @return the name of the constraint.
      */
     String name() default "";
 

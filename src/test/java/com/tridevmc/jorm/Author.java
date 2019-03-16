@@ -1,8 +1,8 @@
 package com.tridevmc.jorm;
 
-import com.tridevmc.jorm.api.Column;
-import com.tridevmc.jorm.api.PrimaryKey;
-import com.tridevmc.jorm.api.Table;
+import com.tridevmc.jorm.api.annotation.Column;
+import com.tridevmc.jorm.api.annotation.PrimaryKey;
+import com.tridevmc.jorm.api.annotation.Table;
 
 @Table
 public class Author {
