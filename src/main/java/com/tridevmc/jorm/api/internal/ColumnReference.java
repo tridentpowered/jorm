@@ -1,4 +1,4 @@
-package com.tridevmc.jorm;
+package com.tridevmc.jorm.api.internal;
 
 /*
  * Copyright 2019 Trident Development (Tridev)
@@ -16,13 +16,19 @@ package com.tridevmc.jorm;
  * limitations under the License.
  */
 
-import org.junit.Test;
+import org.jooq.DataType;
 
-public class JormTest {
+/**
+ * Internal class, used for caching data related to a column declaration on a Jorm {@link TableReference}
+ *
+ * DO NOT USE THIS outside of Jorm, we offer no guarantee of support for it.
+ */
+public class ColumnReference {
+    public String name;
+    public DataType dataType;
 
-    @Test
-    public void createTableIfNotExists() {
-        Jorm.createTableIfNotExists(Author.class);
-        Jorm.createTableIfNotExists(Book.class);
+    public ColumnReference(String name, DataType dataType) {
+        this.name = name;
+        this.dataType = dataType;
     }
 }
